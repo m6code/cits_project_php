@@ -47,13 +47,13 @@ body {
 }
 
 input:checked + .slider {
-    background-color: #3f6fb3;
+    background-color: #047857;
     /*background-color: #26b99a;*/
 }
 
 input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
-    box-shadow: 0 0 1px #2196F3;
+    box-shadow: 0 0 1px #10b981;
+    box-shadow: 0 0 1px #10b981;
 }
 
 input:checked + .slider:before {
@@ -97,11 +97,11 @@ ul.bar_tabs {
 }
 
 .left_col {
-    background: #3f6fb3;
+    background: #047857;
 }
 
 .nav_title {
-    background: #3f6fb3;
+    background: #047857;
 }
 
 .nav_menu {
@@ -113,16 +113,26 @@ ul.bar_tabs {
 }
 
 body {
-    background: #3f6fb3;
+    background: #047857;
 }
 
 .btn-primary {
-    background-color: #3f6fb3;
+    background-color: #10b981;
+}
+.btn-primary:hover {
+    background-color: #047857;
+}
+
+.btn-info {
+    background-color: #6ee7b7;
+}
+.btn-info:hover {
+    background-color: #059669;
 }
 
 .nav.side-menu > li.active > a {
     text-shadow: rgba(0, 0, 0, .25) 0 -1px 0;
-    background: linear-gradient(#3f6fb3, #3a6cb3), #3974c7;
+    background: linear-gradient(#059669, #059669), #059669;
     box-shadow: rgba(0, 0, 0, .25) 0 1px 0, inset rgba(255, 255, 255, .16) 0 1px 0;
 }
 
@@ -137,7 +147,7 @@ body {
 #loader {
     border: 16px solid #f3f3f3;
     border-radius: 50%;
-    border-top: 16px solid #3f6fb3;
+    border-top: 16px solid #047857;
     width: 120px;
     height: 120px;
     -webkit-animation: spin 2s linear infinite;
