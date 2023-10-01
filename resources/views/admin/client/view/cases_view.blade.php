@@ -27,12 +27,12 @@
                         @endif
 
 
-                        @if($adminHasPermition->can(['invoice_list']) =="1")
-                            <li class="{{ request()->is('admin/client/account-list/*') ? 'active' : '' }}"
-                                role="presentation"><a
-                                    href="{{route('clients.account-list',[$client->id])}}">Account</a>
-                            </li>
-                        @endif
+{{--                        @if($adminHasPermition->can(['invoice_list']) =="1")--}}
+{{--                            <li class="{{ request()->is('admin/client/account-list/*') ? 'active' : '' }}"--}}
+{{--                                role="presentation"><a--}}
+{{--                                    href="{{route('clients.account-list',[$client->id])}}">Account</a>--}}
+{{--                            </li>--}}
+{{--                        @endif--}}
                     </ul>
 
 

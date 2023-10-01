@@ -25,50 +25,50 @@
 
             @endif
             @if(\Auth::guard('admin')->user()->user_type=="Admin")
-                <li><a><i class="fa fa-users"></i> Team Members <span class="fa fa-chevron-down"></span></a>
+                <li><a><i class="fa fa-users"></i> Personnel <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                        <li><a href="{{ url('admin/client_user') }}"> Team Member</a></li>
+                        <li><a href="{{ url('admin/client_user') }}"> Personnel</a></li>
                         <li><a href="{{ route('role.index') }}">Role</a></li>
 
                     </ul>
                 </li>
             @endif
-            @if($adminHasPermition->can(['service_list']) == "1" || $adminHasPermition->can(['invoice_list'])=="1")
-                <li><a><i class="fa fa-money"></i> Income <span class="fa fa-chevron-down"></span></a>
-                    <ul class="nav child_menu">
-                        @if($adminHasPermition->can(['service_list']) == "1")
-                            <li><a href="{{ url('admin/service') }}">Service</a></li>
-                        @endif
+{{--            @if($adminHasPermition->can(['service_list']) == "1" || $adminHasPermition->can(['invoice_list'])=="1")--}}
+{{--                <li><a><i class="fa fa-money"></i> Income <span class="fa fa-chevron-down"></span></a>--}}
+{{--                    <ul class="nav child_menu">--}}
+{{--                        @if($adminHasPermition->can(['service_list']) == "1")--}}
+{{--                            <li><a href="{{ url('admin/service') }}">Service</a></li>--}}
+{{--                        @endif--}}
 
-                        @if($adminHasPermition->can(['invoice_list']) == "1")
-                            <li><a href="{{ url('admin/invoice') }}">Invoice</a>
-                        @endif
-
-
-                    </ul>
-                </li>
-            @endif
-            @if($adminHasPermition->can(['vendor_list']) =="1")
-                <li><a href="{{ route('vendor.index') }}"><i class="fa fa-user-plus"></i> Vendor</a></li>
-            @endif
-
-            @if($adminHasPermition->can(['expense_type_list'])=="1" || $adminHasPermition->can(['expense_list'])=="1")
-                <li><a><i class="fa fa-money"></i> Expense <span class="fa fa-chevron-down"></span></a>
-                    <ul class="nav child_menu">
-
-                        @if($adminHasPermition->can(['expense_type_list']) =="1")
-                            <li><a href="{{ url('admin/expense-type') }}">Expense Type</a></li>
-                        @endif
+{{--                        @if($adminHasPermition->can(['invoice_list']) == "1")--}}
+{{--                            <li><a href="{{ url('admin/invoice') }}">Invoice</a>--}}
+{{--                        @endif--}}
 
 
-                        @if($adminHasPermition->can(['expense_list']) =="1")
-                            <li><a href="{{ url('admin/expense') }}">Expense</a></li>
-                        @endif
+{{--                    </ul>--}}
+{{--                </li>--}}
+{{--            @endif--}}
+{{--            @if($adminHasPermition->can(['vendor_list']) =="1")--}}
+{{--                <li><a href="{{ route('vendor.index') }}"><i class="fa fa-user-plus"></i> Vendor</a></li>--}}
+{{--            @endif--}}
 
-                    </ul>
-                </li>
+{{--            @if($adminHasPermition->can(['expense_type_list'])=="1" || $adminHasPermition->can(['expense_list'])=="1")--}}
+{{--                <li><a><i class="fa fa-money"></i> Expense <span class="fa fa-chevron-down"></span></a>--}}
+{{--                    <ul class="nav child_menu">--}}
 
-            @endif
+{{--                        @if($adminHasPermition->can(['expense_type_list']) =="1")--}}
+{{--                            <li><a href="{{ url('admin/expense-type') }}">Expense Type</a></li>--}}
+{{--                        @endif--}}
+
+
+{{--                        @if($adminHasPermition->can(['expense_list']) =="1")--}}
+{{--                            <li><a href="{{ url('admin/expense') }}">Expense</a></li>--}}
+{{--                        @endif--}}
+
+{{--                    </ul>--}}
+{{--                </li>--}}
+
+{{--            @endif--}}
 
 
             @if($adminHasPermition->can(['case_type_list'])=="1"
@@ -101,17 +101,17 @@
                             <li><a href="{{ url('admin/judge') }}">Judge</a></li>
                         @endif
 
-                        @if($adminHasPermition->can(['tax_list']) == "1")
-                            <li><a href="{{ url('admin/tax') }}">Tax</a></li>
-                        @endif
+{{--                        @if($adminHasPermition->can(['tax_list']) == "1")--}}
+{{--                            <li><a href="{{ url('admin/tax') }}">Tax</a></li>--}}
+{{--                        @endif--}}
 
 
-                        @if($adminHasPermition->can(['general_setting_edit']) == "1")
-                            <li><a href="{{ url('admin/general-setting') }}">General Setting</a></li>
-                        @endif
-                        @if(\Auth::guard('admin')->user()->user_type=="Admin")
-                            <li><a href="{{ url('admin/database-backup') }}">Database Backup</a></li>
-                        @endif
+{{--                        @if($adminHasPermition->can(['general_setting_edit']) == "1")--}}
+{{--                            <li><a href="{{ url('admin/general-setting') }}">General Setting</a></li>--}}
+{{--                        @endif--}}
+{{--                        @if(\Auth::guard('admin')->user()->user_type=="Admin")--}}
+{{--                            <li><a href="{{ url('admin/database-backup') }}">Database Backup</a></li>--}}
+{{--                        @endif--}}
 
                     </ul>
                 </li>
